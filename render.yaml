@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: bot-1win-pro
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node index.js
+    envVars:
+      - key: NODE_VERSION
+        value: 18.16.0
